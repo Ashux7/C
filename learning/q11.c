@@ -1,16 +1,19 @@
 #include<stdio.h>
 
-void printhw(int n);
+void pg(char fname[30],char lname[30], char hobby[30]);
 
 int main(){
-    int n = 5;
-    printhw(5);
+    char fname[30],lname[30],hobby[30];
+    printf("Enter first name: ");
+    scanf("%s",&fname);
+    printf("Enter last name: ");
+    scanf("%s",&lname);
+    printf("Enter hobby: ");
+    scanf("%s",&hobby);
+    pg(fname,lname,hobby);
+    return 0;
 }
 
-void printhw(int n){
-    if(n < 1){
-        return;
-    }
-    printf("HEHE \n");
-    printhw(n-1); // recursion
+void pg(char fname[30], char lname[30], char hobby[30]){
+    printf("Hi, %s %s. Nice to hear that your hobby is %s", fname,lname,hobby);
 }
