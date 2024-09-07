@@ -9,6 +9,7 @@ int main(){
     scanf("%d",&p);
     int x = sum(p);
     printf("%d",x);
+    return 0;
 }
 
 int sum(int n){
