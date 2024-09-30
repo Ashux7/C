@@ -22,19 +22,17 @@ int main() {
 void rearrange(int arr[], int n, int x) {
     int low = 0;      
     int high = n - 1; 
-    while (low < high) {
+    while (low <= high) {
         while (arr[low] < x) {
             low++;
         }
         while (arr[high] > x) {
             high--;
         }
-        if (low < high) {
-            int temp = arr[low];
-            arr[low] = arr[high];
-            arr[high] = temp;
+        int temp = arr[low];
+        arr[low] = arr[high];
+        arr[high] = temp;
         }
-    }
     for (int i = 0; i < n; i++) {
         if (arr[i] == x) {
             int temp = arr[i];

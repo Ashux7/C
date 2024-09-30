@@ -1,13 +1,12 @@
 #include <stdio.h>
-#define SIZE 7
 int main() {
-    int arr[SIZE];
-    int invVector[SIZE - 1];
+    int arr[7];
+    int invVector[6];
     printf("Enter 7 distinct non-negative integers:\n");
-    for (int i = 0; i < SIZE; i++) {
+    for (int i = 0; i < 7; i++) {
         scanf("%d", &arr[i]);
     }
-    for (int i = 0; i < SIZE - 1; i++) {
+    for (int i = 0; i < 6; i++) {
         invVector[i] = 0; 
         for (int j = 0; j < i; j++) {
             if (arr[j] > arr[i]) {
@@ -16,8 +15,8 @@ int main() {
         }
     }
     printf("Inversion Vector:\n");
-    for (int i = 0; i < SIZE - 1; i++) {
-        printf("%d\t", invVector[i]);
+    for (int i = 0; i < 6; i++) {
+        printf("%d ", invVector[i]);
     }
     printf("\n");
     return 0;
