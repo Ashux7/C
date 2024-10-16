@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdbool.h>
-bool check(int arr[], int n);
+
+int check(int arr[], int n);
 int main() {
     int n;
     printf("Enter the number of elements in the array: ");
@@ -17,20 +17,20 @@ int main() {
     }
     return 0;
 }
-bool check(int arr[], int n) {
+int check(int arr[], int n) {
     int freq[1000] = {0}; 
     for (int i = 0; i < n; i++) {
         freq[arr[i]]++;
     }
-    bool freqSeen[1000] = {false}; 
+    int freqSeen[1000] = {0}; 
     for (int i = 0; i < 1000; i++) {
         if (freq[i] > 0) { 
             if (freqSeen[freq[i]]) {
-                return false;
+                return 0;
             }
-            freqSeen[freq[i]] = true;
+            freqSeen[freq[i]] = 1;
         }
     }
-    return true;
+    return 1;
 }
 
