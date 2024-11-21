@@ -1,0 +1,10 @@
+101,Reagan,phy:A+,chem:B+,Math:A-
+102,Robert,phy:A+,chem:A+,Math:A-
+103,oppenheimer,phy:B-,chem:C+,Math:A-
+104,Kamala,phy:C+,chem:B+,Math:A-
+105,Harris,phy:A+,chem:B+,Math:A-
+106,Joe,phy:B+,chem:B+,Math:A-
+107,Biden,phy:D+,chem:B+,Math:A-
+108,Franklin,phy:C+,chem:B+,Math:A-
+109,Roosevelt,phy:B+,chem:B+,Math:A-
+110,Trump,phy:A-,chem:A+,Math:B-
